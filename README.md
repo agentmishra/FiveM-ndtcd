@@ -55,8 +55,7 @@ code: `Pong! $pingms` //Code
 })
 
 bot.readyCommand({
-    channel: "", //You can use this or not
-    code: `$log[Ready on $userTag[$clientID]]` //Example Ready on Client
+    code: `$log[Ready on $userTag[$clientID]! Parasing Packages of $userTag[853222169298599986]]` //Example Ready on Client
 })
 ```
 **OP you did it! ok now head over to index.js and then change the `"TOKEN"` to `process.env.token`! this will make your bot token private! now create a `.env` file and paste this!**
@@ -93,8 +92,7 @@ code: `Pong! $pingms` //Code
 })
 
 bot.readyCommand({
-    channel: "", //You can use this or not
-    code: `$log[Ready on $userTag[$clientID]]` //Example Ready on Client
+    code: `$log[Ready on $userTag[$clientID]! Parasing Packages of $userTag[853222169298599986]]` //Example Ready on Client
 })
 
 ```
